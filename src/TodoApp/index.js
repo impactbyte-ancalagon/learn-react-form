@@ -9,11 +9,7 @@ class TodoApp extends Component {
       todos: [
         {
           id: 0,
-          text: "Eat lunch"
-        },
-        {
-          id: 1,
-          text: "Coding for fun"
+          text: "Sample todo"
         }
       ]
     }
