@@ -6,12 +6,8 @@ class TodoApp extends Component {
 
     this.state = {
       input: "",
-      todos: [
-        {
-          id: 0,
-          text: "Sample todo"
-        }
-      ]
+      latestId: 0,
+      todos: []
     }
   }
 
@@ -22,14 +18,16 @@ class TodoApp extends Component {
   handleTodoSubmit = event => {
     event.preventDefault()
 
+    const latestId = this.state.latestId
     const newTodo = {
-      id: this.state.todos.length,
+      id: latestId,
       text: this.state.input
     }
     const newTodos = this.state.todos.concat(newTodo)
 
     this.setState({
       input: "",
+      latestId: latestId + 1,
       todos: newTodos
     })
   }
