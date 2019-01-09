@@ -38,7 +38,7 @@ class TodoApp extends Component {
   render() {
     return (
       <div>
-        <h1>Todo App</h1>
+        <h1>{this.props.title}</h1>
         <form onSubmit={this.handleTodoSubmit}>
           <input
             type="text"
