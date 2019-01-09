@@ -1,5 +1,7 @@
 # Learn React Form
 
+![Screenshot](screenshot.png)
+
 ```sh
 yarn
 yarn start
